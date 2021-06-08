@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<title> Family Book </title>
+<body>
+<h1> Family Book </h1>
+<hr> <hr>
+<img id="family_img" src="Family Book img.jpg">
+<h3 id="one">1.Our Family Book</h3>
+<button type="button" onclick="family()">Next</button>
+<hr>
+<script>
+var names=[
+
+"2.My Father (Navdeep Goel)",
+"3.My Mother  (Monika Goel)",
+"4.My brother  (Akisht Goel)",
+"5.Me (Yasharth Goel)"
+];
+var images = [
+
+"father.jpeg",
+"mother.jpeg",
+"brother.jpeg",
+"me.jpeg"
+];
+var i=0;
+function family(){
+document.getElementById("one").innerHTML=names[i];
+document.getElementById("family_img").src=images[i];
+i++;
+if(i==4){
+   i=0;
+
+}}
+</script>
+
+</body>
+
+</html>
